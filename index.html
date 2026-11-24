@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Certified Interconnection</title>
+<meta name="description" content="Deciding what connects to the power grid, project by project and as a whole, under every outage and season, with a guarantee or a full study.">
+<style>
+@font-face { font-family: Heros; src: url(assets/texgyreheros-regular.otf); }
+@font-face { font-family: Heros; font-weight: bold; src: url(assets/texgyreheros-bold.otf); }
+@font-face { font-family: Heros; font-style: italic; src: url(assets/texgyreheros-italic.otf); }
+:root { --ink:#111; --mute:#555; --line:#ddd; --soft:#f3f3f3; --bg:#fff; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family: Heros, Helvetica, Arial, sans-serif; font-size:16.5px; line-height:1.6; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 max(16px, env(safe-area-inset-left)); }
+nav.top { position: sticky; top:0; background: rgba(255,255,255,.94); backdrop-filter: blur(6px); border-bottom:1px solid var(--line); z-index: 5; }
+nav.top .wrap { display:flex; justify-content:space-between; align-items:center; gap:12px; padding-block: 12px; flex-wrap: wrap; }
+.brand { font-weight:bold; letter-spacing:-.2px; }
+nav.top a { color: var(--ink); text-decoration:none; font-size:14px; margin-left: 16px; }
+nav.top a:hover { text-decoration: underline; }
+header.hero { padding: 64px 0 24px; }
+.kicker { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--mute); font-weight: bold; }
+h1 { font-size: clamp(34px, 6vw, 58px); line-height:1.03; letter-spacing:-1.2px; margin: 10px 0 16px; }
+.lede { font-size: clamp(18px, 2.4vw, 21px); color:#333; max-width: 46rem; margin: 0 0 22px; }
+.btns a { display:inline-block; border:1.5px solid var(--ink); border-radius:999px; padding:8px 16px; margin: 0 8px 8px 0; color:var(--ink); text-decoration:none; font-size:14.5px; }
+.btns a.solid { background: var(--ink); color:#fff; }
+section { padding: 44px 0; border-top: 1px solid var(--line); }
+h2 { font-size: clamp(24px, 3.4vw, 32px); letter-spacing:-.5px; margin: 0 0 14px; }
+h3 { font-size: 18px; margin: 18px 0 6px; }
+p { margin: 0 0 12px; max-width: 48rem; }
+.stats { display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 16px; margin: 22px 0; }
+.stat { border-top: 3px solid var(--ink); padding-top: 8px; }
+.stat b { display:block; font-size: clamp(26px, 4vw, 36px); line-height:1.05; letter-spacing:-.5px; }
+.stat span { display:block; font-size: 13.5px; color: var(--mute); margin-top: 5px; }
+figure { margin: 22px 0; }
+figure img { width: 100%; display:block; border: 1px solid var(--line); border-radius: 6px; background:#fff; }
+figcaption { font-size: 14px; color: var(--mute); margin-top: 8px; max-width: 48rem; }
+.q { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; margin-top: 14px; }
+.q div { background: var(--soft); border-radius: 8px; padding: 16px; }
+.q b { display:block; margin-bottom: 4px; }
+.stack { margin: 18px 0; }
+.stack svg { width:100%; height:auto; display:block; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 12px 0; }
+th { text-align:left; border-bottom: 1.5px solid var(--ink); padding: 7px 6px 7px 0; }
+td { border-bottom: 1px solid var(--line); padding: 7px 6px 7px 0; vertical-align: top; }
+td.n { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.repos { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; }
+.repo { border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
+.repo a { color: var(--ink); font-weight: bold; }
+.tag { display:inline-block; font-size: 11.5px; letter-spacing:.06em; text-transform: uppercase; border:1px solid var(--ink); border-radius: 999px; padding: 1px 8px; margin-left: 6px; vertical-align: middle; }
+.tag.g { border-color:#999; color:#666; }
+ol.road li { margin-bottom: 8px; }
+.note { border-left: 3px solid var(--ink); padding: 4px 0 4px 14px; margin: 16px 0; }
+footer { color: var(--mute); font-size: 13.5px; padding: 28px 0 44px; border-top: 1px solid var(--line); }
+@media (max-width: 760px) { .stats { grid-template-columns: repeat(2, minmax(0,1fr)); } .q, .repos { grid-template-columns: 1fr; } nav.top a { margin: 0 14px 0 0; } }
+</style></head><body>
+
+<nav class="top"><div class="wrap">
+  <span class="brand">Certified Interconnection</span>
+  <span><a href="#problem">Problem</a><a href="#answers">What it answers</a><a href="#stack">Stack</a><a href="#results">Results</a><a href="#code">Code</a><a href="#roadmap">Roadmap</a><a href="https://github.com/certified-interconnection">GitHub</a></span>
+</div></nav>
+
+<div class="wrap">
+<header class="hero">
+  <div class="kicker">Open-source grid planning &middot; 2026</div>
+  <h1>Deciding what connects to the grid, project by project and as a whole.</h1>
+  <p class="lede">New solar farms, batteries and data centers wait years to connect, and most never do. Certified Interconnection is a study engine that tells each project, and the whole group asking at once, how much the grid can take under every outage and season the operator checks, what the fastest and cheapest way to make room is, and who should pay. Every fast answer comes with a guarantee, or it goes to the full engineering study.</p>
+  <div class="btns"><a class="solid" href="https://github.com/certified-interconnection">Code</a><a href="#results">Results</a><a href="#roadmap">Roadmap</a></div>
+  <figure>
+    <img src="assets/interaction.gif" alt="Animated bars: for clusters of projects on the IEEE 118-bus grid, the sum of what each project could connect alone towers over what the cluster can connect together.">
+    <figcaption>Projects that each fit on their own interfere when they connect together. On the IEEE 118-bus grid, a cluster can take a median of 34% of the sum of what its projects could each take alone.</figcaption>
+  </figure>
+</header>
+
+<section id="problem">
+  <h2>The problem</h2>
+  <p>Before anything connects, the grid operator has to check that the grid stays safe if any line fails, in every season, with every other project that's asking at the same time. That's the interconnection study, and today it takes years, done one phase at a time. Since FERC Order 2023, operators like PJM study requests in clusters, because projects that fit alone can overload the grid together.</p>
+  <p>From PJM's own public queue file, which we cleaned and published:</p>
+  <div class="stats">
+    <div class="stat"><b>8,190</b><span>generation requests in PJM's public queue</span></div>
+    <div class="stat"><b>24%</b><span>of requests submitted 2008 to 2017 reached service</span></div>
+    <div class="stat"><b>72%</b><span>of them withdrew</span></div>
+    <div class="stat"><b>68%</b><span>of active requests share their county with at least five others</span></div>
+  </div>
+  <figure><img src="assets/fig0_pjm_queue.png" alt="Left: outcomes of PJM requests submitted 2008 to 2017. Right: share of active requests in crowded counties."><figcaption>Real PJM data: most requests never connect, and active requests are packed together, so cluster effects are the normal case.</figcaption></figure>
+</section>
+
+<section id="answers">
+  <h2>What it answers</h2>
+  <div class="q">
+    <div><b>Can each project connect on its own?</b>Its capacity under single-line, breaker and common-tower outages, in summer peak, winter peak and light load.</div>
+    <div><b>What can the cluster take together?</b>The group's capacity under the same checks, and how much projects interfere with or help each other.</div>
+    <div><b>Is together better than alone?</b>Which projects only fit next to a partner (a data center beside a solar farm), and which ones crowd each other out.</div>
+    <div><b>What if several things fail?</b>Double outages and a cascading-outage screen, so "secure" doesn't mean one bad day from a blackout.</div>
+    <div><b>How do we make room fastest?</b>Upgrades compared with switching the network, flexible load and storage, and connection order, ranked by time to connect, cost, ease of building and approvals.</div>
+    <div><b>Who pays, and what if someone withdraws?</b>Fair, order-independent cost shares, so one withdrawal doesn't force everyone into a full restudy.</div>
+  </div>
+  <div class="note"><p style="margin:0">Every answer either carries a guarantee (a bound on how often a "safe" call can be wrong, backed by a random audit) or is deferred to the full study. Physics stays exact; AI only predicts, ranks and searches.</p></div>
+</section>
+
+<section id="stack">
+  <h2>The stack</h2>
+  <div class="stack">
+  <svg viewBox="0 0 960 430" role="img" aria-label="Six-layer stack: data, physics core, AI layer, guarantees, decision engine, product">
+    <style>.b{fill:#fff;stroke:#111;stroke-width:1.6}.d{fill:#ededed;stroke:#111;stroke-width:1.6}.t{font:bold 15px Heros,Helvetica,Arial}.s{font:13px Heros,Helvetica,Arial;fill:#444}</style>
+    <rect class="d" x="10" y="10" width="940" height="58" rx="6"/><text class="t" x="26" y="34">6  Product</text><text class="s" x="26" y="55">queue file in: per-project and cluster answers, options ranked by speed / cost / ease, cost shares, risk report</text>
+    <rect class="b" x="10" y="80" width="940" height="58" rx="6"/><text class="t" x="26" y="104">5  Decision engine (exact optimization)</text><text class="s" x="26" y="125">cluster value · option search: upgrade / switch / flexible load / order · fair cost shares · withdrawal sensitivity</text>
+    <rect class="b" x="10" y="150" width="940" height="58" rx="6"/><text class="t" x="26" y="174">4  Guarantees (exact math)</text><text class="s" x="26" y="195">certificates valid for the clusters the optimizer actually picks · random AC audit with a confidence bound · certify or defer</text>
+    <rect class="d" x="10" y="220" width="940" height="58" rx="6"/><text class="t" x="26" y="244">3  AI layer (predicts and ranks, never decides "safe")</text><text class="s" x="26" y="265">per-project AC footprints · pairwise interactions · contingency ranking · grid foundation-model warm starts</text>
+    <rect class="b" x="10" y="290" width="940" height="58" rx="6"/><text class="t" x="26" y="314">2  Physics core (exact)</text><text class="s" x="26" y="335">AC power flow and batch outages on Power Grid Model · short circuit · grid strength · switching · cascading screen</text>
+    <rect class="b" x="10" y="360" width="940" height="58" rx="6"/><text class="t" x="26" y="384">1  Data</text><text class="s" x="26" y="405">PJM's public queue · synthetic grids up to 2,000 buses · seasons · NERC contingency sets · public cost and timeline data</text>
+  </svg>
+  </div>
+  <p>Built to plug into what grid operators already run: <a href="https://github.com/PowerGridModel/power-grid-model" style="color:var(--ink)">Power Grid Model</a> (LF Energy, run in production at Alliander) as the solver, and grid foundation models such as IBM and Hydro-Qu&eacute;bec's OpenGridFM as fast predictors that the guarantee layer checks.</p>
+</section>
+
+<section id="results">
+  <h2>Results so far</h2>
+  <h3>Clusters are worth less than the sum of their parts</h3>
+  <figure><img src="assets/fig4_interaction.png" alt="Bar chart: joint AC capacity of each of 17 clusters as a percentage of the sum of individual capacities; median 34%."><figcaption>IEEE 118-bus, 17 clusters: joint capacity below the sum of individual capacities in all 17.</figcaption></figure>
+  <h3>When does today's shortcut hold?</h3>
+  <p>PJM's published optimization picks the most MW that needs no upgrades using a linear model (distribution factors), then checks with full AC power flow. We checked those picks against AC N-1 ourselves:</p>
+  <table>
+    <tr><th>Setting</th><th>Linear pick secure under AC N-1</th></tr>
+    <tr><td>Projects sized near each bus's limit (IEEE 30, 118, 300 and Illinois 200-bus)</td><td class="n">31% to 39%</td></tr>
+    <tr><td>Real PJM project sizes, synthetic 500-bus grid</td><td class="n">44 of 49 (90%)</td></tr>
+    <tr><td>Real PJM project sizes, synthetic 2,000-bus Texas grid</td><td class="n">16 of 20 (80%), admitting 220 of 1,669 MW requested</td></tr>
+  </table>
+  <p>So the shortcut is fine when a cluster is light and fails when it pushes the grid hard, and even when it's safe it leaves most of the requested MW unanswered. That's why the engine compares options instead of trusting one method.</p>
+  <figure><img src="assets/fig2_dfax_secure_rate.png" alt="Share of linear-optimal picks secure under AC N-1 on four grids, with confidence intervals."><figcaption>Stress test: projects sized near each bus's limit. 95% confidence intervals.</figcaption></figure>
+  <h3>Trusting AI answers</h3>
+  <p>On IBM and Hydro-Qu&eacute;bec's GENCO grid foundation model (synthetic Texas 2,000-bus, 989 outage cases), our check certified 609 answers and passed no wrong one, and using the model's prediction as a starting point made the exact solve about twice as fast (median 2 Newton iterations instead of 4).</p>
+  <div class="note"><p style="margin:0">Honest limits: results are on public synthetic grids, because real utility network models are restricted (CEII). The learned certified screen does not yet beat simple scaling of the linear answer. Seasons, multiple-outage categories, switching and cost sharing are being built now.</p></div>
+</section>
+
+<section id="code">
+  <h2>Code</h2>
+  <div class="repos">
+    <div class="repo"><a href="https://github.com/certified-interconnection/pjm-queue-data">pjm-queue-data</a><span class="tag">public</span><p style="margin:6px 0 0">Every generation request in PJM's public queue, cleaned, with the completion, withdrawal and crowding statistics above.</p></div>
+    <div class="repo"><a href="https://github.com/certified-interconnection/grid-engine">grid-engine</a><span class="tag">public</span><span class="tag g">building</span><p style="margin:6px 0 0">Physics core on Power Grid Model: seasonal cases, NERC contingency sets, batch outages, short circuit.</p></div>
+    <div class="repo">certify-or-defer<span class="tag g">private for now</span><p style="margin:6px 0 0">Learned AC corrections, the cluster selection reproduction, and the certify-or-defer guarantee.</p></div>
+    <div class="repo">cluster-values<span class="tag g">private for now</span><p style="margin:6px 0 0">Individual vs cluster value, which projects help or crowd each other, fair cost shares and withdrawal sensitivity.</p></div>
+    <div class="repo"><a href="https://github.com/sehajr-singhs/genco-certify">genco-certify</a><span class="tag">public</span><p style="margin:6px 0 0">Certify-or-reject for grid foundation-model predictions (GENCO, OpenGridFM).</p></div>
+    <div class="repo"><a href="https://github.com/PowerGridModel/power-grid-model/pull/1720">Power Grid Model #1720</a><span class="tag">upstream</span><p style="margin:6px 0 0">IEEE 118-bus validation case contributed to Power Grid Model, plus warm-start benchmarks on #1609.</p></div>
+  </div>
+</section>
+
+<section id="roadmap">
+  <h2>Roadmap</h2>
+  <ol class="road">
+    <li><b>Physics core:</b> seasons, single, breaker and common-tower outages, short circuit and grid strength on Power Grid Model.</li>
+    <li><b>Individual and cluster values</b> on the 2,000-bus grid with real PJM project sizes.</li>
+    <li><b>Ways to make room:</b> network switching, flexible load and storage, connection order, and the MW each unlocks.</li>
+    <li><b>Cost and time:</b> public PJM upgrade costs and LBNL timelines; ranking by speed, cost and buildability.</li>
+    <li><b>Guarantees everywhere:</b> certificates that hold for the clusters the optimizer picks, plus a random audit.</li>
+    <li><b>Fair cost sharing</b> that survives withdrawals without a full restudy.</li>
+    <li><b>Risk:</b> double outages and a cascading screen.</li>
+    <li><b>Product:</b> a package and web demo where a queue file goes in and a report comes out, reviewed by planning engineers.</li>
+    <li><b>Real networks</b> through a utility or ISO partner, for a full, published validation.</li>
+  </ol>
+</section>
+
+<section id="team">
+  <h2>Team</h2>
+  <p><b>Sehaj Randhir Singh</b>, lead researcher and developer, Queens High School for the Sciences at York College, New York. <a href="https://sehajr-singhs.github.io/" style="color:var(--ink)">sehajr-singhs.github.io</a></p>
+  <p style="color:var(--mute)">Built with Claude (Anthropic) as an AI coding collaborator: code, experiments and documentation, with every result checked and reproducible from the repositories.</p>
+</section>
+</div>
+<footer><div class="wrap">Certified Interconnection &middot; Every number on this page is generated from result files in the repositories. Results on public test and synthetic grids.</div></footer>
+</body></html>
