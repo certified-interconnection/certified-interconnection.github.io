@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="648pt" height="237.6pt" viewBox="0 0 648 237.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-25T17:10:33.523291</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 237.6 
+L 648 237.6 
+L 648 0 
+L 0 0 
+L 0 237.6 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 48.62 204.788 
+L 637.74 204.788 
+L 637.74 24.18 
+L 48.62 24.18 
+L 48.62 204.788 
+z
+" style="fill: none"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 75.398182 204.788 
+L 101.556817 204.788 
+L 101.556817 187.049714 
+L 75.398182 187.049714 
+L 75.398182 204.788 
+z
+" clip-path="url(#p88d2a624c3)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 144.236695 204.788 
+L 170.395331 204.788 
+L 170.395331 166.62381 
+L 144.236695 166.62381 
+L 144.236695 204.788 
+z
+" clip-path="url(#p88d2a624c3)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 213.075209 204.788 
+L 239.233844 204.788 
+L 239.233844 190.812381 
+L 213.075209 190.812381 
+L 213.075209 204.788 
+z
+" clip-path="url(#p88d2a624c3)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 281.913723 204.788 
+L 308.072358 204.788 
+L 308.072358 174.686667 
+L 281.913723 174.686667 
+L 281.913723 204.788 
+z
+" clip-path="url(#p88d2a624c3)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 350.752237 204.788 
+L 376.910872 204.788 
+L 376.910872 192.424952 
+L 350.752237 192.424952 
+L 350.752237 204.788 
+z
+" clip-path="url(#p88d2a624c3)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 419.59075 204.788 
+L 445.749385 204.788 
+L 445.749385 32.780381 
+L 419.59075 32.780381 
+L 419.59075 204.788 
+z
+" clip-path="url(#p88d2a624c3)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 488.429264 204.788 
+L 514.587899 204.788 
+L 514.587899 199.950286 
+L 488.429264 199.950286 
+L 488.429264 204.788 
+z
+" clip-path="url(#p88d2a624c3)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 557.267778 204.788 
+L 583.426413 204.788 
+L 583.426413 83.845143 
+L 557.267778 83.845143 
+L 557.267778 204.788 
+z
+" clip-path="url(#p88d2a624c3)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 102.933587 204.788 
+L 129.092222 204.788 
+L 129.092222 192.424952 
+L 102.933587 192.424952 
+z
+" clip-path="url(#p88d2a624c3)" style="fill: url(#he0292562d7); stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 171.772101 204.788 
+L 197.930736 204.788 
+L 197.930736 178.449333 
+L 171.772101 178.449333 
+z
+" clip-path="url(#p88d2a624c3)" style="fill: url(#he0292562d7); stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 240.610615 204.788 
+L 266.76925 204.788 
+L 266.76925 196.187619 
+L 240.610615 196.187619 
+z
+" clip-path="url(#p88d2a624c3)" style="fill: url(#he0292562d7); stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 309.449128 204.788 
+L 335.607763 204.788 
+L 335.607763 186.51219 
+L 309.449128 186.51219 
+z
+" clip-path="url(#p88d2a624c3)" style="fill: url(#he0292562d7); stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 378.287642 204.788 
+L 404.446277 204.788 
+L 404.446277 193.5 
+L 378.287642 193.5 
+z
+" clip-path="url(#p88d2a624c3)" style="fill: url(#he0292562d7); stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 447.126156 204.788 
+L 473.284791 204.788 
+L 473.284791 183.824571 
+L 447.126156 183.824571 
+z
+" clip-path="url(#p88d2a624c3)" style="fill: url(#he0292562d7); stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 515.964669 204.788 
+L 542.123305 204.788 
+L 542.123305 200.48781 
+L 515.964669 200.48781 
+z
+" clip-path="url(#p88d2a624c3)" style="fill: url(#he0292562d7); stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 584.803183 204.788 
+L 610.961818 204.788 
+L 610.961818 189.737333 
+L 584.803183 189.737333 
+z
+" clip-path="url(#p88d2a624c3)" style="fill: url(#he0292562d7); stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mfda59bdb29" d="M 0 0 
+L 0 3.5 
+" style="stroke: #111111; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mfda59bdb29" x="102.245202" y="204.788" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; fill: #111111" transform="translate(82.980202 217.90925)">IEEE 300</text>
+      <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; fill: #111111" transform="translate(80.572077 226.9185)">summer P1</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mfda59bdb29" x="171.083716" y="204.788" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; fill: #111111" transform="translate(151.818716 217.90925)">IEEE 300</text>
+      <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; fill: #111111" transform="translate(149.410591 226.9185)">summer N2</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#mfda59bdb29" x="239.922229" y="204.788" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; fill: #111111" transform="translate(220.657229 217.90925)">IEEE 300</text>
+      <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; fill: #111111" transform="translate(218.249104 226.9185)">winter P1</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mfda59bdb29" x="308.760743" y="204.788" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; fill: #111111" transform="translate(289.495743 217.90925)">IEEE 300</text>
+      <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; fill: #111111" transform="translate(287.087618 226.9185)">winter N2</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#mfda59bdb29" x="377.599257" y="204.788" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; fill: #111111" transform="translate(353.518007 217.90925)">Texas 2000</text>
+      <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; fill: #111111" transform="translate(355.926132 226.9185)">summer P1</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#mfda59bdb29" x="446.437771" y="204.788" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; fill: #111111" transform="translate(422.356521 217.90925)">Texas 2000</text>
+      <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; fill: #111111" transform="translate(424.764646 226.9185)">summer P7</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#mfda59bdb29" x="515.276284" y="204.788" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; fill: #111111" transform="translate(491.195034 217.90925)">Texas 2000</text>
+      <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; fill: #111111" transform="translate(493.603159 226.9185)">summer N2</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#mfda59bdb29" x="584.114798" y="204.788" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; fill: #111111" transform="translate(560.033548 217.90925)">Texas 2000</text>
+      <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; fill: #111111" transform="translate(562.441673 226.9185)">winter P7</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_9">
+      <defs>
+       <path id="m950c52f56f" d="M 0 0 
+L -3.5 0 
+" style="stroke: #111111; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m950c52f56f" x="48.62" y="204.788" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="41.62" y="208.422492" transform="rotate(-0 41.62 208.422492)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m950c52f56f" x="48.62" y="177.91181" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="41.62" y="181.546302" transform="rotate(-0 41.62 181.546302)">50</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m950c52f56f" x="48.62" y="151.035619" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="41.62" y="154.670111" transform="rotate(-0 41.62 154.670111)">100</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m950c52f56f" x="48.62" y="124.159429" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="41.62" y="127.793921" transform="rotate(-0 41.62 127.793921)">150</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m950c52f56f" x="48.62" y="97.283238" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="41.62" y="100.91773" transform="rotate(-0 41.62 100.91773)">200</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m950c52f56f" x="48.62" y="70.407048" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="41.62" y="74.04154" transform="rotate(-0 41.62 74.04154)">250</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#m950c52f56f" x="48.62" y="43.530857" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="41.62" y="47.165349" transform="rotate(-0 41.62 47.165349)">300</text>
+     </g>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="18.421094" y="114.484" transform="rotate(-90 18.421094 114.484)">outage cases</text>
+    </g>
+   </g>
+   <g id="patch_19">
+    <path d="M 48.62 204.788 
+L 48.62 24.18 
+" style="fill: none; stroke: #111111; stroke-width: 0.9; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 48.62 204.788 
+L 637.74 204.788 
+" style="fill: none; stroke: #111111; stroke-width: 0.9; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="116.012905" y="191.887429" transform="rotate(-0 116.012905 191.887429)">70%</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="184.851419" y="177.91181" transform="rotate(-0 184.851419 177.91181)">69%</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="253.689932" y="195.650095" transform="rotate(-0 253.689932 195.650095)">62%</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="322.528446" y="185.974667" transform="rotate(-0 322.528446 185.974667)">61%</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="391.36696" y="192.962476" transform="rotate(-0 391.36696 192.962476)">91%</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="460.205473" y="183.287048" transform="rotate(-0 460.205473 183.287048)">12%</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="529.043987" y="199.950286" transform="rotate(-0 529.043987 199.950286)">89%</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="597.882501" y="189.19981" transform="rotate(-0 597.882501 189.19981)">12%</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="343.18" y="18.18" transform="rotate(-0 343.18 18.18)">the linear (DC) check misses many unsafe outages, mostly voltage problems it cannot see</text>
+   </g>
+   <g id="legend_1">
+    <g id="patch_21">
+     <path d="M 465.326875 39.998984 
+L 484.326875 39.998984 
+L 484.326875 33.348984 
+L 465.326875 33.348984 
+L 465.326875 39.998984 
+z
+" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_26">
+     <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: start; fill: #111111" x="491.926875" y="39.998984" transform="rotate(-0 491.926875 39.998984)">AC insecure</text>
+    </g>
+    <g id="patch_22">
+     <path d="M 465.326875 53.993672 
+L 484.326875 53.993672 
+L 484.326875 47.343672 
+L 465.326875 47.343672 
+z
+" style="fill: url(#he0292562d7); stroke: #111111; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_27">
+     <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: start; fill: #111111" x="491.926875" y="53.993672" transform="rotate(-0 491.926875 53.993672)">of those, DC says secure</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p88d2a624c3">
+   <rect x="48.62" y="24.18" width="589.12" height="180.608"/>
+  </clipPath>
+ </defs>
+ <defs>
+  <pattern id="he0292562d7" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+   <rect x="0" y="0" width="73" height="73" fill="none"/>
+   <path d="M -36 36 
+L 36 -36 
+M -33 39 
+L 39 -33 
+M -30 42 
+L 42 -30 
+M -27 45 
+L 45 -27 
+M -24 48 
+L 48 -24 
+M -21 51 
+L 51 -21 
+M -18 54 
+L 54 -18 
+M -15 57 
+L 57 -15 
+M -12 60 
+L 60 -12 
+M -9 63 
+L 63 -9 
+M -6 66 
+L 66 -6 
+M -3 69 
+L 69 -3 
+M 0 72 
+L 72 0 
+M 3 75 
+L 75 3 
+M 6 78 
+L 78 6 
+M 9 81 
+L 81 9 
+M 12 84 
+L 84 12 
+M 15 87 
+L 87 15 
+M 18 90 
+L 90 18 
+M 21 93 
+L 93 21 
+M 24 96 
+L 96 24 
+M 27 99 
+L 99 27 
+M 30 102 
+L 102 30 
+M 33 105 
+L 105 33 
+M 36 108 
+L 108 36 
+" style="fill: #111111; stroke: #111111; stroke-width: 0.6; stroke-linecap: butt; stroke-linejoin: miter"/>
+  </pattern>
+ </defs>
+</svg>

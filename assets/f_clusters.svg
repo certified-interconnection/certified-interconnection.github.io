@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="648pt" height="237.6pt" viewBox="0 0 648 237.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-25T17:10:34.417322</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 237.6 
+L 648 237.6 
+L 648 0 
+L 0 0 
+L 0 237.6 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 60.14 210.26 
+L 637.74 210.26 
+L 637.74 24.18 
+L 60.14 24.18 
+L 60.14 210.26 
+z
+" style="fill: none"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 86.394545 210.26 
+L 139.462244 210.26 
+L 139.462244 33.040952 
+L 86.394545 33.040952 
+L 86.394545 210.26 
+z
+" clip-path="url(#p4a8f955971)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 226.046383 210.26 
+L 279.114081 210.26 
+L 279.114081 66.413823 
+L 226.046383 66.413823 
+L 226.046383 210.26 
+z
+" clip-path="url(#p4a8f955971)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 365.698221 210.26 
+L 418.765919 210.26 
+L 418.765919 64.690605 
+L 365.698221 64.690605 
+L 365.698221 210.26 
+z
+" clip-path="url(#p4a8f955971)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 505.350058 210.26 
+L 558.417756 210.26 
+L 558.417756 44.898033 
+L 505.350058 44.898033 
+L 505.350058 210.26 
+z
+" clip-path="url(#p4a8f955971)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 139.462244 210.26 
+L 192.529942 210.26 
+L 192.529942 94.312942 
+L 139.462244 94.312942 
+z
+" clip-path="url(#p4a8f955971)" style="fill: url(#h52e1593075); stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 279.114081 210.26 
+L 332.181779 210.26 
+L 332.181779 104.784388 
+L 279.114081 104.784388 
+z
+" clip-path="url(#p4a8f955971)" style="fill: url(#h52e1593075); stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 418.765919 210.26 
+L 471.833617 210.26 
+L 471.833617 101.349718 
+L 418.765919 101.349718 
+z
+" clip-path="url(#p4a8f955971)" style="fill: url(#h52e1593075); stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 558.417756 210.26 
+L 611.485455 210.26 
+L 611.485455 76.331378 
+L 558.417756 76.331378 
+z
+" clip-path="url(#p4a8f955971)" style="fill: url(#h52e1593075); stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="md723ec626c" d="M 0 0 
+L 0 3.5 
+" style="stroke: #111111; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#md723ec626c" x="139.462244" y="210.26" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="139.462244" y="224.528984" transform="rotate(-0 139.462244 224.528984)">'fits alone' (sum)</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#md723ec626c" x="279.114081" y="210.26" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="279.114081" y="224.528984" transform="rotate(-0 279.114081 224.528984)">first come</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#md723ec626c" x="418.765919" y="210.26" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="418.765919" y="224.528984" transform="rotate(-0 418.765919 224.528984)">largest first</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#md723ec626c" x="558.417756" y="210.26" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="558.417756" y="224.528984" transform="rotate(-0 558.417756 224.528984)">best subset (exact)</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5">
+      <defs>
+       <path id="m932efd4473" d="M 0 0 
+L -3.5 0 
+" style="stroke: #111111; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m932efd4473" x="60.14" y="210.26" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="53.14" y="213.894492" transform="rotate(-0 53.14 213.894492)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m932efd4473" x="60.14" y="187.633711" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="53.14" y="191.268204" transform="rotate(-0 53.14 191.268204)">2500</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m932efd4473" x="60.14" y="165.007423" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="53.14" y="168.641915" transform="rotate(-0 53.14 168.641915)">5000</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m932efd4473" x="60.14" y="142.381134" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="53.14" y="146.015626" transform="rotate(-0 53.14 146.015626)">7500</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m932efd4473" x="60.14" y="119.754846" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="53.14" y="123.389338" transform="rotate(-0 53.14 123.389338)">10000</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m932efd4473" x="60.14" y="97.128557" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="53.14" y="100.763049" transform="rotate(-0 53.14 100.763049)">12500</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m932efd4473" x="60.14" y="74.502269" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="53.14" y="78.136761" transform="rotate(-0 53.14 78.136761)">15000</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m932efd4473" x="60.14" y="51.87598" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="53.14" y="55.510472" transform="rotate(-0 53.14 55.510472)">17500</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m932efd4473" x="60.14" y="29.249691" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="53.14" y="32.884184" transform="rotate(-0 53.14 32.884184)">20000</text>
+     </g>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="18.567813" y="117.22" transform="rotate(-90 18.567813 117.22)">total MW over 90 clusters</text>
+    </g>
+   </g>
+   <g id="patch_11">
+    <path d="M 60.14 210.26 
+L 60.14 24.18 
+" style="fill: none; stroke: #111111; stroke-width: 0.9; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 60.14 210.26 
+L 637.74 210.26 
+" style="fill: none; stroke: #111111; stroke-width: 0.9; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="348.94" y="18.18" transform="rotate(-0 348.94 18.18)">deciding as a cluster: same requests, every answer AC-checked</text>
+   </g>
+   <g id="legend_1">
+    <g id="patch_13">
+     <path d="M 265.49625 37.50125 
+L 281.49625 37.50125 
+L 281.49625 31.90125 
+L 265.49625 31.90125 
+L 265.49625 37.50125 
+z
+" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: start; fill: #111111" x="287.89625" y="37.50125" transform="rotate(-0 287.89625 37.50125)">single outages (P1)</text>
+    </g>
+    <g id="patch_14">
+     <path d="M 265.49625 49.34125 
+L 281.49625 49.34125 
+L 281.49625 43.74125 
+L 265.49625 43.74125 
+z
+" style="fill: url(#h52e1593075); stroke: #111111; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_17">
+     <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: start; fill: #111111" x="287.89625" y="49.34125" transform="rotate(-0 287.89625 49.34125)">plus common-tower doubles (P7)</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4a8f955971">
+   <rect x="60.14" y="24.18" width="577.6" height="186.08"/>
+  </clipPath>
+ </defs>
+ <defs>
+  <pattern id="h52e1593075" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+   <rect x="0" y="0" width="73" height="73" fill="none"/>
+   <path d="M -36 36 
+L 36 -36 
+M -33 39 
+L 39 -33 
+M -30 42 
+L 42 -30 
+M -27 45 
+L 45 -27 
+M -24 48 
+L 48 -24 
+M -21 51 
+L 51 -21 
+M -18 54 
+L 54 -18 
+M -15 57 
+L 57 -15 
+M -12 60 
+L 60 -12 
+M -9 63 
+L 63 -9 
+M -6 66 
+L 66 -6 
+M -3 69 
+L 69 -3 
+M 0 72 
+L 72 0 
+M 3 75 
+L 75 3 
+M 6 78 
+L 78 6 
+M 9 81 
+L 81 9 
+M 12 84 
+L 84 12 
+M 15 87 
+L 87 15 
+M 18 90 
+L 90 18 
+M 21 93 
+L 93 21 
+M 24 96 
+L 96 24 
+M 27 99 
+L 99 27 
+M 30 102 
+L 102 30 
+M 33 105 
+L 105 33 
+M 36 108 
+L 108 36 
+" style="fill: #111111; stroke: #111111; stroke-width: 0.6; stroke-linecap: butt; stroke-linejoin: miter"/>
+  </pattern>
+ </defs>
+</svg>

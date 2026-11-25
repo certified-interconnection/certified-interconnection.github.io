@@ -1,0 +1,145 @@
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand">Certified Interconnection</div>
+  <nav>
+    <a href="#problem">Problem</a><a href="#how">Architecture</a><a href="#engine">1 Engine</a><a href="#capacity">2 Capacity</a><a href="#room">3 Room</a><a href="#cost">4 Cost</a><a href="#certify">5 Certify</a><a href="#ai">AI</a><a href="#docs">Docs</a><a href="#code">Code</a>
+  </nav>
+</header>
+
+<div class="intro">
+  <p class="lede">Deciding what connects to the power grid, project by project and as a whole.</p>
+  <p>New solar farms, batteries and data centers wait years to connect, and most never do. Certified Interconnection is an open-source study engine that tells each project, and the whole cluster asking at the same time, how much the grid can take under every outage and season, what it would take to make room, how long and how much, and when a fast answer can be trusted without the full study.</p>
+  <p class="muted">Led by <a href="https://sehajr-singhs.github.io/">Sehaj Randhir Singh</a>. Built on <a href="https://github.com/PowerGridModel/power-grid-model">Power Grid Model</a>; designed to check grid AI models like OpenGridFM. Every number below is computed by code in the repositories and reproducible from them.</p>
+  <div class="links"><a class="solid" href="https://github.com/certified-interconnection">Code</a><a href="https://github.com/certified-interconnection/grid-engine/blob/master/docs/REPORT.md">Full report</a><a href="https://github.com/certified-interconnection/grid-engine/blob/master/docs/FORMULATION.md">Problem statement</a><a href="https://github.com/certified-interconnection/pjm-queue-data">PJM queue data</a></div>
+</div>
+
+<figure><img src="assets/capmap_gen.gif" alt="Animated map of the IEEE 118-bus grid: each bus is a circle sized by how much new generation it can take, cycling through summer, winter and light load, with and without single-line outages.">
+<figcaption>Every bus of the IEEE 118-bus grid, sized by how much new generation it can take, cycling through three seasons, with no outages and then under every single-line outage. With outages the median bus can take 80 MW at summer peak instead of 180.</figcaption></figure>
+
+<div class="sec-label" id="problem">The problem</div>
+<p>Before anything connects, the grid operator has to show the grid stays within limits if any line fails, in every season it studies, together with every other project asking at the same time. That is the interconnection study. Since FERC Order 2023, operators like PJM study requests in clusters, because projects that fit alone can overload the grid together. From PJM's own public queue, which we cleaned and <a href="https://github.com/certified-interconnection/pjm-queue-data">published</a>:</p>
+<div class="stats">
+  <div><b>8,190</b>generation requests in PJM's public queue</div>
+  <div><b>24%</b>of requests submitted 2008 to 2017 reached service</div>
+  <div><b>72%</b>of them withdrew</div>
+  <div><b>68%</b>of active requests share their county with 5+ others</div>
+</div>
+{{fig f_pjm.svg | Left: 24% of 2008-2017 requests reached service, 72% withdrew. Right: median years from request to service by submit year. | Left: what happened to requests submitted 2008 to 2017. Right: for the ones that made it, the median time from request to service by the year they entered the queue.}}
+
+<div class="sec-label" id="answers">What it answers</div>
+<div class="grid2">
+  <div class="box"><b>Can each project connect on its own?</b><span>Its capacity under single-line and common-tower outages, at summer peak, winter peak and light load, and which outage and which line or voltage limit stops it.</span></div>
+  <div class="box"><b>What can the cluster take together?</b><span>The group's capacity under the same checks, and how much projects crowd each other out or help each other.</span></div>
+  <div class="box"><b>Which projects should be admitted?</b><span>First come, largest first, or the exact best subset, every answer checked with full AC power flow.</span></div>
+  <div class="box"><b>How do we make room?</b><span>Flexible load, batteries, tripping generation after an outage, opening a line, or connecting at partial size, and the MW each one unlocks.</span></div>
+  <div class="box"><b>How long, and how much?</b><span>PJM's own timelines, and upgrade cost ranges where every number has a public source.</span></div>
+  <div class="box"><b>When can a fast answer be trusted?</b><span>A fast linear answer is certified only with a tested error bound; otherwise it goes to the full study.</span></div>
+</div>
+
+<div class="sec-label" id="how">Architecture</div>
+<p>Five stages on one physics engine. The physics and the guarantees are exact; AI only proposes and ranks, and never makes a "safe" call on its own.</p>
+{{D1}}
+<h3>How it fits with Power Grid Model and OpenGridFM</h3>
+<p>Power Grid Model, the open-source solver European grid operators use, does the AC power flow. grid-engine turns public grid cases into its input and adds everything a study needs on top. Grid foundation models such as OpenGridFM and GENCO are treated as fast proposals: each prediction is checked, and good ones warm-start the exact solver.</p>
+{{D2}}
+<h3>What a cluster study asks</h3>
+{{D5}}
+
+<div class="step" id="engine">Step 1</div>
+<div class="sec-label tight">The physics engine</div>
+<p><a href="https://github.com/certified-interconnection/grid-engine">grid-engine</a> converts MATPOWER cases to Power Grid Model, builds three seasons (capacitor banks switch with load) and three outage sets (every single branch, common-tower pairs, a sample of double outages), and runs each set as one batch. Generator reactive limits are optional, using MATPOWER's own method of switching a generator at its limit from voltage control to fixed output.</p>
+<div class="stats">
+  <div><b>18,935</b>of 19,041 cases agree with an independent solver to 1e-10 pu</div>
+  <div><b>0</b>disagreements on which cases converge</div>
+  <div><b>1.1e-13</b>pu against Power Grid Model's own IEEE 300 reference</div>
+  <div><b>7x to 115x</b>faster than a pandapower loop on the same machine</div>
+</div>
+{{fig f_validation.svg | Worst voltage difference between grid-engine and PYPOWER per grid, all at or below 1e-10 pu. | Six grids from 30 to 2,000 buses, three seasons, every outage set: grid-engine against PYPOWER, a port of MATPOWER's solver. Each x is the worst bus of one season and outage set. The other 106 cases diverge in both solvers. (pandapower's MATPOWER converter disagrees with both on IEEE 300 and Texas 2,000, so it is not the referee there.)}}
+{{fig f_speed.svg | Milliseconds per outage case: Power Grid Model batch much faster than a pandapower loop. | Time per outage case. The pandapower loop runs without numba from a flat start, so it is a rough reference, not a tuned comparison.}}
+<h3>The linear shortcut misses unsafe cases</h3>
+<p>Fast screens use a linear (DC) model. Checked against full AC on every outage:</p>
+{{fig f_dc_vs_ac.svg | Bars: AC-insecure outages and how many the DC check calls secure, IEEE 300 and Texas 2000. | On IEEE 300 at summer peak, the DC check calls 23 of 33 unsafe single outages safe (70%), mostly voltage problems it cannot see. On the 2,000-bus Texas grid it misses 21 of 23.}}
+
+<div class="step" id="capacity">Step 2</div>
+<div class="sec-label tight">Individual and cluster capacity</div>
+<p>For any bus, request or cluster: the largest MW that keeps every case within limits (new generation displaces existing generators in proportion, as in a deliverability study), what limits it, and the exact best set to admit. A project is only charged for violations it causes or worsens.</p>
+{{fig f_capmap.svg | IEEE 118 map: circles sized by capacity for new generation, much smaller under single outages. | Summer peak: the same grid with no outages (left) and under every single-line outage (right). The median bus can take 180 MW without outages and 80 MW with them.}}
+{{fig f_capacity_seasons.svg | Bars with intervals: median share of a bus's room lost to single outages per season, generation and load, with and without reactive limits. | Single outages take 38% to 55% of a typical bus's room for new generation and 54% to 71% for new load, most at summer peak. Ignoring generator reactive limits understates the summer loss (55% vs 63% for generation, 71% vs 80% for load). Whiskers: 95% bootstrap intervals.}}
+{{fig f_clusters.svg | Total MW over 90 clusters for fits-alone, first come, largest first and best subset, under single outages and with common-tower doubles. | 90 clusters of 5 to 8 nearby requests across three seasons. The exact best subset admits 15% more than first come under single outages (95% interval 9% to 23%) and 27% more with common-tower doubles (19% to 38%). Adding up what fits alone overpromises in 32% of clusters.}}
+{{fig f_dc_pick.svg | Share of linear cluster picks that fail full AC: 15.6%, 10.0% and 20.1%. | The linear (DC) best pick is not safe under full AC in 15.6% of the 90 clusters, and in 20.1% (301 of 1,500) of a larger sample.}}
+<h3>Across four grids</h3>
+<div class="res-wrap"><table>
+  <tr><th>Grid</th><th>Clusters</th><th>Project capacity lost to outages (median)</th><th>Cluster vs sum of its parts (median)</th><th>Cluster choice vs first come (total MW)</th></tr>
+  <tr><td>IEEE 30-bus</td><td class="n">101</td><td class="n">59%</td><td class="n">50%</td><td class="n">+29%</td></tr>
+  <tr><td>IEEE 118-bus</td><td class="n">58</td><td class="n">54%</td><td class="n">47%</td><td class="n">+21%</td></tr>
+  <tr><td>Illinois 200-bus</td><td class="n">77</td><td class="n">50%</td><td class="n">55%</td><td class="n">+17%</td></tr>
+  <tr><td>IEEE 300-bus</td><td class="n">39</td><td class="n">46%</td><td class="n">35%</td><td class="n">+14%</td></tr>
+</table></div>
+<p class="muted" style="font-size:13px">An earlier, separate experiment (single outages; the better of two cluster-wide picks). No simple pre-check (share of loads, mix, headroom, cluster size) predicted which clusters gain on a grid it hadn't seen better than a coin flip, so the engine runs the decision instead of guessing.</p>
+
+<div class="step" id="room">Step 3</div>
+<div class="sec-label tight">Ways to make room</div>
+<p>For the 80 of 90 clusters that don't fully fit, how much more each option admits beyond the best plain subset. Every admitted set is re-checked in AC under its own rule, and an option can only add MW.</p>
+{{fig f_options.svg | Horizontal bars: extra MW per option, generation tripping largest, opening one line smallest. | Tripping generation after an outage (a remedial action scheme) unlocks the most, then connecting at partial size and flexible load. Opening a single line rarely helps here. Whiskers: 95% bootstrap intervals over clusters.}}
+
+<div class="step" id="cost">Step 4</div>
+<div class="sec-label tight">Time and cost</div>
+<p>From PJM's queue: a median of 2.8 years from request to operation (1,205 projects) and 1.3 years to withdrawal (4,093). Upgrade costs come only from public sources (Lawrence Berkeley National Lab's PJM cost data, MISO's transmission cost guide, PJM), each with its URL and page, and are given as ranges.</p>
+{{fig f_timelines.svg | Median years from queue entry to operation by fuel, with interquartile ranges. | Years from queue entry to operation by fuel (x = median, line = middle half of projects). Solar, wind and nuclear take about four years; gas about 2.7.}}
+<p>On the 118-bus clusters, the first upgrade needed to admit the rest is a reconductored line in 71 of 80 clusters, an added transformer in 4, reactive support in 3 and a new line in 2. The costs there are illustrative, because the test grid has no line lengths.</p>
+
+<div class="step" id="certify">Step 5</div>
+<div class="sec-label tight">Certify or defer</div>
+<p>A fast linear pick is wrong about one time in five. Instead of checking every pick with the full study, each is scored by AC on only its ten riskiest outages and certified if the score clears a threshold chosen by fixed-sequence testing on calibration clusters, so the bound holds for the picks the screen actually makes.</p>
+{{D4}}
+<div class="stats">
+  <div><b>81.6%</b>of fast picks certified (target error 5%)</div>
+  <div><b>1.5%</b>of certified picks fail AC (9 of 612; 95% interval 0.7% to 2.8%)</div>
+  <div><b>42</b>AC solves per decision instead of 178</div>
+  <div><b>9.1%</b>certified when DC's own margin is the score</div>
+</div>
+{{fig f_certify.svg | Left: share of picks failing AC by score quintile, flat for the DC margin, concentrated in the lowest quintile for the screened AC score. Right: certified share and AC solves per decision. | Left: DC's own margin barely ranks risk; the screened AC score puts almost all failures in its lowest fifth. Right: certified share (bars) and AC work per decision (x; dotted line = full check). Over 200 random splits the test error exceeded 5% in 1.5% of them. Limits: one grid, single outages; the strict rule certifies in 119 of 200 splits, and a variant chosen after seeing results certifies in all 200.}}
+
+<div class="sec-label" id="ai">The AI layer</div>
+<p>Learned models predict how far full AC capacity sits from the linear answer, for any set of requests. The Set Transformer treats the cluster as a set: order doesn't matter, and attention lets every pair of requests interact, which is exactly what a cluster study is about. Its output starts at zero, so before training it is the linear answer.</p>
+{{D3}}
+{{fig f_ai.svg | Test error of the learned correction for DC, DeepSets, Set Transformer and operator graph on IEEE 30 and 118. | Error in predicting log(AC / DC capacity) on held-out clusters. On IEEE 30 the learned models halve DC's error, and the operator graph (a learned operator at every bus) is best. On joint safety they cut DC's false-safe rate from 34.5% to between 4% and 7% (IEEE 30).}}
+<p>On IBM and Hydro-Qu&eacute;bec's GENCO grid foundation model (synthetic Texas 2,000-bus, 989 outage cases), our check certified 609 answers and passed no wrong one, and warm-starting the exact solver from the model's prediction cut Newton iterations from 4 to 2 (median). The same idea is being built into Power Grid Model: our warm-start benchmarks on the maintainers' experimental branch matched our reimplementation in 2,712 of 2,712 cases and saved 15% to 17% of solve time on the 118 and 300-bus grids.</p>
+
+<div class="sec-label" id="docs">Documents</div>
+<div class="repo"><div class="dot"></div><div><a href="https://github.com/certified-interconnection/grid-engine/blob/master/docs/FORMULATION.md"><b>Problem statement</b></a><br><span class="muted">Definitions, five testable hypotheses, the baselines, and what would count as failure.</span></div></div>
+<div class="repo"><div class="dot"></div><div><a href="https://github.com/certified-interconnection/grid-engine/blob/master/docs/REPORT.md"><b>Technical report, Steps 1 to 4</b></a><br><span class="muted">Every table with 95% intervals, generated by <code>bench/report.py</code> from the result files.</span></div></div>
+<div class="repo"><div class="dot"></div><div><a href="https://sehajr-singhs.github.io/share/pjm/PJM-Certified-Screen.pdf"><b>Slides: certified screen, presented to PJM Applied Innovation</b></a><br><span class="muted">The single-request screen this project grew from, October 2026.</span></div></div>
+<div class="repo"><div class="dot"></div><div><a href="https://sehajr-singhs.github.io/papers/certified-feasible-capacity-operators.pdf"><b>Paper: Certified Feasible-Capacity Operators for Interconnection Queues</b></a><br><span class="muted">The earlier single-request method: a learned capacity screen with a coverage certificate, and where it breaks.</span></div></div>
+
+<div class="sec-label" id="code">Code</div>
+<div class="repo"><div class="dot"></div><div><a href="https://github.com/certified-interconnection/grid-engine"><b>grid-engine</b></a><span class="tag">public &middot; v0.3</span><br><span class="muted">Steps 1 to 4: the engine, capacity, options, cost and time, the validation scripts, 24 tests and the report.</span></div></div>
+<div class="repo"><div class="dot"></div><div><a href="https://github.com/certified-interconnection/pjm-queue-data"><b>pjm-queue-data</b></a><span class="tag">public</span><br><span class="muted">Every generation request in PJM's public queue, cleaned, with completion, withdrawal and crowding statistics.</span></div></div>
+<div class="repo"><div class="dot"></div><div><b>certify-or-defer</b><span class="tag">private for now</span><br><span class="muted">Step 5, the learned AC corrections (Set Transformer, operator graph) and the cluster-selection reproduction.</span></div></div>
+<div class="repo"><div class="dot"></div><div><a href="https://github.com/sehajr-singhs/genco-certify"><b>genco-certify</b></a><span class="tag">public</span><br><span class="muted">Certify-or-reject and warm starts for grid foundation-model predictions (GENCO, OpenGridFM).</span></div></div>
+<div class="repo"><div class="dot"></div><div><a href="https://github.com/PowerGridModel/power-grid-model/pull/1720"><b>Power Grid Model #1720 and #1609</b></a><span class="tag">upstream</span><br><span class="muted">IEEE 118-bus validation case, and warm-start benchmarks re-run on the maintainers' experimental branch (<a href="https://github.com/sehajr-singhs/pgm-warmstart-bench">scripts</a>).</span></div></div>
+
+<div class="sec-label" id="roadmap">Next</div>
+<ol class="road">
+  <li><b>Bigger grids:</b> Steps 2 to 5 on the 2,000-bus Texas grid with real PJM project sizes.</li>
+  <li><b>Guarantees everywhere:</b> certify or defer for every stage (capacity, options, cost), and for double outages.</li>
+  <li><b>AI proposes, physics decides:</b> OpenGridFM and the operator graph as the fast proposal inside certify or defer, and warm starts built into Power Grid Model upstream.</li>
+  <li><b>Fair cost sharing</b> that survives withdrawals without a full restudy.</li>
+  <li><b>Dynamics:</b> stability after a fault for inverter-based projects (ANDES) and short-circuit strength.</li>
+  <li><b>Real networks:</b> a utility or ISO partner for a full, published validation, and review by planning engineers.</li>
+</ol>
+
+<div class="sec-label">Honest limits</div>
+<ul class="limits">
+  <li>Public test and synthetic grids only. Real utility network models are restricted (critical-infrastructure data).</li>
+  <li>Outage sets and seasons use our stated definitions, not an operator's study files.</li>
+  <li>Steps 2 to 5 run on one grid so far (IEEE 118); costs on a test grid are illustrative; Step 5 covers single outages.</li>
+  <li>Approvals, permitting and land are human decisions; the engine can flag them, not predict them.</li>
+</ul>
+
+<footer>Certified Interconnection &middot; Sehaj Randhir Singh, Queens High School for the Sciences at York College, New York &middot; built with Claude (Anthropic) as an AI coding collaborator, with every result checked and reproducible from the repositories.</footer>
+</div>
+</body>
+</html>

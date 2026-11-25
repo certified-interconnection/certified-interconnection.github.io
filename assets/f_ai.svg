@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="648pt" height="230.4pt" viewBox="0 0 648 230.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-25T17:10:34.950118</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 230.4 
+L 648 230.4 
+L 648 0 
+L 0 0 
+L 0 230.4 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 48.62 203.06 
+L 637.74 203.06 
+L 637.74 10.26 
+L 48.62 10.26 
+L 48.62 203.06 
+z
+" style="fill: none"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 75.398182 203.06 
+L 129.524294 203.06 
+L 129.524294 80.339732 
+L 75.398182 80.339732 
+L 75.398182 203.06 
+z
+" clip-path="url(#pdec8dc5bec)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 217.835319 203.06 
+L 271.961431 203.06 
+L 271.961431 138.162816 
+L 217.835319 138.162816 
+L 217.835319 203.06 
+z
+" clip-path="url(#pdec8dc5bec)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 360.272456 203.06 
+L 414.398569 203.06 
+L 414.398569 139.393094 
+L 360.272456 139.393094 
+L 360.272456 203.06 
+z
+" clip-path="url(#pdec8dc5bec)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 502.709594 203.06 
+L 556.835706 203.06 
+L 556.835706 146.467195 
+L 502.709594 146.467195 
+L 502.709594 203.06 
+z
+" clip-path="url(#pdec8dc5bec)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 129.524294 203.06 
+L 183.650406 203.06 
+L 183.650406 19.440952 
+L 129.524294 19.440952 
+z
+" clip-path="url(#pdec8dc5bec)" style="fill: url(#hd1b8bc788c); stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 271.961431 203.06 
+L 326.087544 203.06 
+L 326.087544 55.734164 
+L 271.961431 55.734164 
+z
+" clip-path="url(#pdec8dc5bec)" style="fill: url(#hd1b8bc788c); stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 414.398569 203.06 
+L 468.524681 203.06 
+L 468.524681 50.197912 
+L 414.398569 50.197912 
+z
+" clip-path="url(#pdec8dc5bec)" style="fill: url(#hd1b8bc788c); stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 556.835706 203.06 
+L 610.961818 203.06 
+L 610.961818 76.341327 
+L 556.835706 76.341327 
+z
+" clip-path="url(#pdec8dc5bec)" style="fill: url(#hd1b8bc788c); stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m8b87aadfb7" d="M 0 0 
+L 0 3.5 
+" style="stroke: #111111; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m8b87aadfb7" x="129.524294" y="203.06" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="129.524294" y="217.328984" transform="rotate(-0 129.524294 217.328984)">linear (DC)</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m8b87aadfb7" x="271.961431" y="203.06" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="271.961431" y="217.328984" transform="rotate(-0 271.961431 217.328984)">DeepSets</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m8b87aadfb7" x="414.398569" y="203.06" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="414.398569" y="217.328984" transform="rotate(-0 414.398569 217.328984)">Set Transformer</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m8b87aadfb7" x="556.835706" y="203.06" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="556.835706" y="217.278516" transform="rotate(-0 556.835706 217.278516)">operator graph</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5">
+      <defs>
+       <path id="m5298252763" d="M 0 0 
+L -3.5 0 
+" style="stroke: #111111; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m5298252763" x="48.62" y="203.06" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="41.62" y="206.694492" transform="rotate(-0 41.62 206.694492)">0.0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m5298252763" x="48.62" y="172.303041" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="41.62" y="175.937533" transform="rotate(-0 41.62 175.937533)">0.1</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m5298252763" x="48.62" y="141.546081" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="41.62" y="145.180573" transform="rotate(-0 41.62 145.180573)">0.2</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m5298252763" x="48.62" y="110.789122" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="41.62" y="114.423614" transform="rotate(-0 41.62 114.423614)">0.3</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m5298252763" x="48.62" y="80.032162" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="41.62" y="83.666655" transform="rotate(-0 41.62 83.666655)">0.4</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m5298252763" x="48.62" y="49.275203" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="41.62" y="52.909695" transform="rotate(-0 41.62 52.909695)">0.5</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m5298252763" x="48.62" y="18.518244" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="41.62" y="22.152736" transform="rotate(-0 41.62 22.152736)">0.6</text>
+     </g>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="18.421094" y="106.66" transform="rotate(-90 18.421094 106.66)">test RMSE of log(AC/DC capacity)</text>
+    </g>
+   </g>
+   <g id="patch_11">
+    <path d="M 48.62 203.06 
+L 48.62 10.26 
+" style="fill: none; stroke: #111111; stroke-width: 0.9; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 48.62 203.06 
+L 637.74 203.06 
+" style="fill: none; stroke: #111111; stroke-width: 0.9; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="legend_1">
+    <g id="patch_13">
+     <path d="M 569.61 23.58125 
+L 585.61 23.58125 
+L 585.61 17.98125 
+L 569.61 17.98125 
+L 569.61 23.58125 
+z
+" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_13">
+     <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: start; fill: #111111" x="592.01" y="23.58125" transform="rotate(-0 592.01 23.58125)">IEEE 30</text>
+    </g>
+    <g id="patch_14">
+     <path d="M 569.61 35.36625 
+L 585.61 35.36625 
+L 585.61 29.76625 
+L 569.61 29.76625 
+z
+" style="fill: url(#hd1b8bc788c); stroke: #111111; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 8px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: start; fill: #111111" x="592.01" y="35.36625" transform="rotate(-0 592.01 35.36625)">IEEE 118</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pdec8dc5bec">
+   <rect x="48.62" y="10.26" width="589.12" height="192.8"/>
+  </clipPath>
+ </defs>
+ <defs>
+  <pattern id="hd1b8bc788c" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+   <rect x="0" y="0" width="73" height="73" fill="none"/>
+   <path d="M -36 36 
+L 36 -36 
+M -33 39 
+L 39 -33 
+M -30 42 
+L 42 -30 
+M -27 45 
+L 45 -27 
+M -24 48 
+L 48 -24 
+M -21 51 
+L 51 -21 
+M -18 54 
+L 54 -18 
+M -15 57 
+L 57 -15 
+M -12 60 
+L 60 -12 
+M -9 63 
+L 63 -9 
+M -6 66 
+L 66 -6 
+M -3 69 
+L 69 -3 
+M 0 72 
+L 72 0 
+M 3 75 
+L 75 3 
+M 6 78 
+L 78 6 
+M 9 81 
+L 81 9 
+M 12 84 
+L 84 12 
+M 15 87 
+L 87 15 
+M 18 90 
+L 90 18 
+M 21 93 
+L 93 21 
+M 24 96 
+L 96 24 
+M 27 99 
+L 99 27 
+M 30 102 
+L 102 30 
+M 33 105 
+L 105 33 
+M 36 108 
+L 108 36 
+" style="fill: #111111; stroke: #111111; stroke-width: 0.6; stroke-linecap: butt; stroke-linejoin: miter"/>
+  </pattern>
+ </defs>
+</svg>

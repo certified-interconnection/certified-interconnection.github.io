@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="648pt" height="230.4pt" viewBox="0 0 648 230.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-25T17:10:33.080655</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 230.4 
+L 648 230.4 
+L 648 0 
+L 0 0 
+L 0 230.4 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 42.86 188.98 
+L 315.418017 188.98 
+L 315.418017 24.18 
+L 42.86 24.18 
+L 42.86 188.98 
+z
+" style="fill: none"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 55.249001 188.98 
+L 108.691749 188.98 
+L 108.691749 136.951586 
+L 55.249001 136.951586 
+L 55.249001 188.98 
+z
+" clip-path="url(#p249aa083a4)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 152.417634 188.98 
+L 205.860382 188.98 
+L 205.860382 32.027619 
+L 152.417634 32.027619 
+L 152.417634 188.98 
+z
+" clip-path="url(#p249aa083a4)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 249.586267 188.98 
+L 303.029016 188.98 
+L 303.029016 181.412231 
+L 249.586267 181.412231 
+L 249.586267 188.98 
+z
+" clip-path="url(#p249aa083a4)" style="fill: none; stroke: #111111; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m672c0cdb27" d="M 0 0 
+L 0 3.5 
+" style="stroke: #111111; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m672c0cdb27" x="81.970375" y="188.98" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="81.970375" y="203.248984" transform="rotate(-0 81.970375 203.248984)">in service</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m672c0cdb27" x="179.139008" y="188.98" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="179.139008" y="203.248984" transform="rotate(-0 179.139008 203.248984)">withdrew</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m672c0cdb27" x="276.307642" y="188.98" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="276.307642" y="203.248984" transform="rotate(-0 276.307642 203.248984)">other</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_4">
+      <defs>
+       <path id="m1d712e9f59" d="M 0 0 
+L -3.5 0 
+" style="stroke: #111111; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m1d712e9f59" x="42.86" y="188.98" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="35.86" y="192.614492" transform="rotate(-0 35.86 192.614492)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m1d712e9f59" x="42.86" y="167.325144" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="35.86" y="170.959636" transform="rotate(-0 35.86 170.959636)">10</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m1d712e9f59" x="42.86" y="145.670287" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="35.86" y="149.304779" transform="rotate(-0 35.86 149.304779)">20</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m1d712e9f59" x="42.86" y="124.015431" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="35.86" y="127.649923" transform="rotate(-0 35.86 127.649923)">30</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m1d712e9f59" x="42.86" y="102.360574" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="35.86" y="105.995067" transform="rotate(-0 35.86 105.995067)">40</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m1d712e9f59" x="42.86" y="80.705718" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="35.86" y="84.34021" transform="rotate(-0 35.86 84.34021)">50</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m1d712e9f59" x="42.86" y="59.050862" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="35.86" y="62.685354" transform="rotate(-0 35.86 62.685354)">60</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m1d712e9f59" x="42.86" y="37.396005" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="35.86" y="41.030498" transform="rotate(-0 35.86 41.030498)">70</text>
+     </g>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="18.426406" y="106.58" transform="rotate(-90 18.426406 106.58)">% of requests</text>
+    </g>
+   </g>
+   <g id="patch_6">
+    <path d="M 42.86 188.98 
+L 42.86 24.18 
+" style="fill: none; stroke: #111111; stroke-width: 0.9; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 42.86 188.98 
+L 315.418017 188.98 
+" style="fill: none; stroke: #111111; stroke-width: 0.9; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="81.970375" y="132.620615" transform="rotate(-0 81.970375 132.620615)">24%</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="179.139008" y="27.696648" transform="rotate(-0 179.139008 27.696648)">72%</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="276.307642" y="177.081259" transform="rotate(-0 276.307642 177.081259)">3%</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="179.139008" y="18.18" transform="rotate(-0 179.139008 18.18)">PJM requests submitted 2008-2017 (n = 2,747)</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_8">
+    <path d="M 364.038017 188.98 
+L 636.596033 188.98 
+L 636.596033 24.18 
+L 364.038017 24.18 
+L 364.038017 188.98 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_4">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m672c0cdb27" x="391.002312" y="188.98" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="391.002312" y="203.248984" transform="rotate(-0 391.002312 203.248984)">2004</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m672c0cdb27" x="420.152902" y="188.98" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="420.152902" y="203.248984" transform="rotate(-0 420.152902 203.248984)">2006</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m672c0cdb27" x="449.303492" y="188.98" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="449.303492" y="203.248984" transform="rotate(-0 449.303492 203.248984)">2008</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#m672c0cdb27" x="478.454082" y="188.98" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="478.454082" y="203.248984" transform="rotate(-0 478.454082 203.248984)">2010</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m672c0cdb27" x="507.604672" y="188.98" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="507.604672" y="203.248984" transform="rotate(-0 507.604672 203.248984)">2012</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#m672c0cdb27" x="536.755262" y="188.98" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_22">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="536.755262" y="203.248984" transform="rotate(-0 536.755262 203.248984)">2014</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m672c0cdb27" x="565.905852" y="188.98" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_23">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="565.905852" y="203.248984" transform="rotate(-0 565.905852 203.248984)">2016</text>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#m672c0cdb27" x="595.056442" y="188.98" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_24">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="595.056442" y="203.248984" transform="rotate(-0 595.056442 203.248984)">2018</text>
+     </g>
+    </g>
+    <g id="xtick_12">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m672c0cdb27" x="624.207032" y="188.98" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_25">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="624.207032" y="203.248984" transform="rotate(-0 624.207032 203.248984)">2020</text>
+     </g>
+    </g>
+    <g id="text_26">
+     <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="500.317025" y="216.493672" transform="rotate(-0 500.317025 216.493672)">year submitted</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_9">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#m1d712e9f59" x="364.038017" y="180.910642" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_27">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="357.038017" y="184.545135" transform="rotate(-0 357.038017 184.545135)">1.5</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m1d712e9f59" x="364.038017" y="151.988213" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_28">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="357.038017" y="155.622706" transform="rotate(-0 357.038017 155.622706)">2.0</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_23">
+      <g>
+       <use xlink:href="#m1d712e9f59" x="364.038017" y="123.065784" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_29">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="357.038017" y="126.700277" transform="rotate(-0 357.038017 126.700277)">2.5</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#m1d712e9f59" x="364.038017" y="94.143356" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_30">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="357.038017" y="97.777848" transform="rotate(-0 357.038017 97.777848)">3.0</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_25">
+      <g>
+       <use xlink:href="#m1d712e9f59" x="364.038017" y="65.220927" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_31">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="357.038017" y="68.855419" transform="rotate(-0 357.038017 68.855419)">3.5</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#m1d712e9f59" x="364.038017" y="36.298498" style="fill: #111111; stroke: #111111; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_32">
+      <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: end; fill: #111111" x="357.038017" y="39.93299" transform="rotate(-0 357.038017 39.93299)">4.0</text>
+     </g>
+    </g>
+    <g id="text_33">
+     <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="333.904423" y="106.58" transform="rotate(-90 333.904423 106.58)">median years to service</text>
+    </g>
+   </g>
+   <g id="line2d_27">
+    <path d="M 376.427017 181.489091 
+L 391.002312 165.292531 
+L 405.577607 113.810607 
+L 420.152902 117.281299 
+L 434.728197 146.203728 
+L 449.303492 90.672664 
+L 463.878787 140.99769 
+L 478.454082 39.769189 
+L 493.029377 125.958027 
+L 507.604672 114.389056 
+L 522.179967 113.810607 
+L 536.755262 130.007167 
+L 551.330557 61.750235 
+L 565.905852 31.670909 
+L 580.481147 41.504535 
+L 595.056442 60.593338 
+L 609.631737 176.861502 
+L 624.207032 119.595093 
+" clip-path="url(#p1a551cad1d)" style="fill: none; stroke: #111111; stroke-width: 1.2; stroke-linecap: square"/>
+    <defs>
+     <path id="mbc473a1a36" d="M -3 3 
+L 3 -3 
+M -3 -3 
+L 3 3 
+" style="stroke: #111111"/>
+    </defs>
+    <g clip-path="url(#p1a551cad1d)">
+     <use xlink:href="#mbc473a1a36" x="376.427017" y="181.489091" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="391.002312" y="165.292531" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="405.577607" y="113.810607" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="420.152902" y="117.281299" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="434.728197" y="146.203728" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="449.303492" y="90.672664" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="463.878787" y="140.99769" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="478.454082" y="39.769189" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="493.029377" y="125.958027" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="507.604672" y="114.389056" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="522.179967" y="113.810607" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="536.755262" y="130.007167" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="551.330557" y="61.750235" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="565.905852" y="31.670909" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="580.481147" y="41.504535" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="595.056442" y="60.593338" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="609.631737" y="176.861502" style="fill: #111111; stroke: #111111"/>
+     <use xlink:href="#mbc473a1a36" x="624.207032" y="119.595093" style="fill: #111111; stroke: #111111"/>
+    </g>
+   </g>
+   <g id="patch_9">
+    <path d="M 364.038017 188.98 
+L 364.038017 24.18 
+" style="fill: none; stroke: #111111; stroke-width: 0.9; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 364.038017 188.98 
+L 636.596033 188.98 
+" style="fill: none; stroke: #111111; stroke-width: 0.9; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 9.5px; font-family:ui-monospace, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace; text-anchor: middle; fill: #111111" x="500.317025" y="18.18" transform="rotate(-0 500.317025 18.18)">survivors: time from request to service</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p249aa083a4">
+   <rect x="42.86" y="24.18" width="272.558017" height="164.8"/>
+  </clipPath>
+  <clipPath id="p1a551cad1d">
+   <rect x="364.038017" y="24.18" width="272.558017" height="164.8"/>
+  </clipPath>
+ </defs>
+</svg>
