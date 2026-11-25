@@ -133,15 +133,18 @@
 </table></div>
 <figure><img src="assets/fig4_interaction.png" alt="Bar chart: joint AC capacity of each cluster as a percentage of the sum of individual capacities, IEEE 118-bus."><figcaption>IEEE 118-bus: the cluster's joint capacity is below the sum of its parts in almost every cluster.</figcaption></figure>
 
-<h3>No single way of deciding wins everywhere</h3>
-<p>Mean MW admitted, all checked with AC N-1. Choosing as a cluster beats first-come-first-served on three grids and loses on the fourth, which is why the engine compares options instead of trusting one rule.</p>
-<div class="res-wrap"><table>
-  <tr><th>Grid</th><th>First-come-first-served</th><th>Cluster choice (linear pick + AC repair)</th></tr>
-  <tr><td>IEEE 30-bus</td><td class="n">49.3 MW</td><td class="n">62.8 MW</td></tr>
-  <tr><td>IEEE 118-bus</td><td class="n">248.7 MW</td><td class="n">269.7 MW</td></tr>
-  <tr><td>Illinois 200-bus</td><td class="n">206.4 MW</td><td class="n">231.0 MW</td></tr>
-  <tr><td>IEEE 300-bus</td><td class="n">121.1 MW</td><td class="n">109.1 MW</td></tr>
-</table></div>
+<h3>Deciding as a cluster admits 14 to 29% more, but you can't tell in advance which clusters gain</h3>
+<p>Same clusters, every answer checked with AC N-1. "Cluster choice" keeps the better of two cluster-wide picks (AC greedy and the linear pick with AC repair); "first come" admits requests one by one in a random queue order.</p>
+<figure><img src="assets/fig5_cluster_vs_queue.png" alt="Bar charts for four grids: total MW admitted by first-come is lower than by cluster choice on every grid, by 29, 21, 17 and 14 percent."><figcaption>Total MW admitted over all clusters. First come wins in at most 12% of clusters on any grid. But no simple pre-check (load share, mix, headroom, cluster size) predicted which clusters gain on a grid it hadn't seen better than a coin flip (best: 47% correct), so the engine runs both and keeps the better one.</figcaption></figure>
+
+<h3>The physics core at scale</h3>
+<p>grid-engine runs every outage set as one Power Grid Model batch, in three seasons. On the 2,000-bus synthetic Texas grid:</p>
+<div class="stats">
+  <div><b>35 ms</b>per outage case (pandapower loop on the same machine: 231 ms)</div>
+  <div><b>2,733 / 2,756</b>single outages secure at summer peak</div>
+  <div><b>398 / 718</b>common-tower double outages secure at summer peak</div>
+  <div><b>2,755 / 2,756</b>single outages secure at light load, once capacitor banks switch with load</div>
+</div>
 
 <h3>When does today's linear shortcut hold?</h3>
 <p>PJM's published optimization picks the most MW that needs no upgrades with a linear model, then checks with full AC power flow. We checked those picks ourselves:</p>
@@ -158,18 +161,18 @@
 <h3>Honest limits</h3>
 <ul class="limits">
   <li>Everything above is on public test and synthetic grids. Real utility network models are restricted (critical-infrastructure data), so full validation on a real network needs a utility or ISO partner.</li>
-  <li>Contingencies today are single-branch outages; breaker and common-tower categories, seasons and short circuit are being added in grid-engine, with our own stated definitions rather than any operator's exact study files.</li>
+  <li>Contingency sets (single outages, common-tower pairs, sampled double outages) and the three seasons use our own stated definitions, not any operator's study files. Generator reactive limits, short circuit and dynamics are not in yet.</li>
   <li>Cost and time for each option will come from public data and will be shown as ranges, not point estimates. Approvals and permitting are human decisions; the engine can flag them, not predict them.</li>
   <li>The learned certified screen does not yet beat simply scaling the linear answer down; the guarantee layer is being rebuilt to hold for optimizer-chosen clusters.</li>
 </ul>
 
 <div class="sec-label" id="code">Code</div>
 <div class="repo"><div class="dot"></div><div><a href="https://github.com/certified-interconnection/pjm-queue-data"><b>pjm-queue-data</b></a><span class="tag">public</span><br><span class="muted">Every generation request in PJM's public queue, cleaned, with the completion, withdrawal and crowding statistics above.</span></div></div>
-<div class="repo"><div class="dot"></div><div><a href="https://github.com/certified-interconnection/grid-engine"><b>grid-engine</b></a><span class="tag">public &middot; v0.1</span><br><span class="muted">Physics core on Power Grid Model: MATPOWER cases, three seasons, P1 / P7 / double-outage sets, batch AC security. Tested against pandapower (voltages agree to 1e-6 pu).</span></div></div>
+<div class="repo"><div class="dot"></div><div><a href="https://github.com/certified-interconnection/grid-engine"><b>grid-engine</b></a><span class="tag">public &middot; v0.2</span><br><span class="muted">Physics core on Power Grid Model: MATPOWER cases, three seasons, P1 / P7 / double-outage sets, batch AC security, and the capacity layer: how much each bus, project and cluster can take, what binds, and the exact best cluster decision. Tested against pandapower (voltages agree to 1e-6 pu).</span></div></div>
 <div class="repo"><div class="dot"></div><div><b>certify-or-defer</b><span class="tag">private for now</span><br><span class="muted">Learned AC corrections, the cluster-selection reproduction (matches brute force exactly) and the certify-or-defer guarantee.</span></div></div>
 <div class="repo"><div class="dot"></div><div><b>cluster-values</b><span class="tag">private for now</span><br><span class="muted">Each project's value alone and in the cluster, who helps or crowds whom, fair cost shares and withdrawal sensitivity.</span></div></div>
 <div class="repo"><div class="dot"></div><div><a href="https://github.com/sehajr-singhs/genco-certify"><b>genco-certify</b></a><span class="tag">public</span><br><span class="muted">Certify-or-reject for grid foundation-model predictions (GENCO, OpenGridFM).</span></div></div>
-<div class="repo"><div class="dot"></div><div><a href="https://github.com/PowerGridModel/power-grid-model/pull/1720"><b>Power Grid Model #1720</b></a><span class="tag">upstream</span><br><span class="muted">IEEE 118-bus validation case contributed to Power Grid Model, plus warm-start benchmarks on #1609.</span></div></div>
+<div class="repo"><div class="dot"></div><div><a href="https://github.com/PowerGridModel/power-grid-model/pull/1720"><b>Power Grid Model #1720</b></a><span class="tag">upstream</span><br><span class="muted">IEEE 118-bus validation case contributed to Power Grid Model, plus warm-start benchmarks on #1609, re-run on the maintainers' experimental branch (<a href="https://github.com/sehajr-singhs/pgm-warmstart-bench">scripts</a>).</span></div></div>
 
 <div class="sec-label" id="roadmap">Roadmap</div>
 <ol class="road">
