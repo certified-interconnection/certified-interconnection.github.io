@@ -10,6 +10,7 @@
 
 <div class="intro">
   <p class="lede">Deciding what connects to the power grid, project by project and as a whole.</p>
+  <p class="muted" style="font-size:13.5px">An AC-feasibility-verified research framework for individual and cluster interconnection capacity, under specified operating and contingency assumptions. It is not an operator's full interconnection study.</p>
   <p>New solar farms, batteries and data centers wait years to connect, and most never do. Certified Interconnection is an open-source study engine that tells each project, and the whole cluster asking at the same time, how much the grid can take under every outage and season, what it would take to make room, how long and how much, and when a fast answer can be trusted without the full study.</p>
   <p class="muted">Led by <a href="https://sehajr-singhs.github.io/">Sehaj Randhir Singh</a>. Built on <a href="https://github.com/PowerGridModel/power-grid-model">Power Grid Model</a>; designed to check grid AI models like OpenGridFM. Every number below is computed by code in the repositories and reproducible from them.</p>
   <div class="links"><a class="solid" href="https://github.com/certified-interconnection">Code</a><a href="https://github.com/certified-interconnection/grid-engine/blob/master/docs/REPORT.md">Full report</a><a href="https://github.com/certified-interconnection/grid-engine/blob/master/docs/FORMULATION.md">Problem statement</a><a href="https://github.com/certified-interconnection/pjm-queue-data">PJM queue data</a></div>
@@ -39,7 +40,7 @@
 </div>
 
 <div class="sec-label" id="how">Architecture</div>
-<p>Five stages on one physics engine. The physics and the guarantees are exact; AI only proposes and ranks, and never makes a "safe" call on its own.</p>
+<p>Five stages on one physics engine. AC feasibility is evaluated against explicitly defined constraints on the modeled networks, and the certification claims apply only within their documented evaluation scope. AI only proposes and ranks; it never makes a "safe" call on its own.</p>
 {{D1}}
 <h3>How it fits with Power Grid Model and OpenGridFM</h3>
 <p>Power Grid Model, the open-source solver European grid operators use, does the AC power flow. grid-engine turns public grid cases into its input and adds everything a study needs on top. Grid foundation models such as OpenGridFM and GENCO are treated as fast proposals: each prediction is checked, and good ones warm-start the exact solver.</p>
